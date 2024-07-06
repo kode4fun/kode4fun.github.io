@@ -1,12 +1,13 @@
 ---
 layout:     post
 title:      "在 github 上建立个人主页"
-subtitle:   "不完整教程"
+subtitle:   "基本流程不完全记录"
 date:       2024-07-06 00:00:00
 author:     "kode4fun"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - git and github
+    - git
+    - github
 ---
 
 > 在 github 上建立主页的流程的不完全记录。
