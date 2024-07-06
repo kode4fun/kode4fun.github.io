@@ -42,16 +42,30 @@ ssh -T git@github.com
 进入 `settings -> Develop settings -> Personal access token` 里，生成新的 `token`。
 
 ### 建立到 repo 的链接
+建立本地 git 到 `<usename>.github.io` 这个 _repo_ 的链接。有两种 `htts` 和 `ssh` 两种方式。
 
-在本地终端使用如下命令添加到 `<usename>.github.io` 这个 _repo_ 的链接
+建立 `https` 链接的方式如下：
 
 ```bash
-# git remote add <link_name> https://<your_access_token>@github.com/<username>/<username>.github.io
+# https 方式
 git remote add homepage https://<your_access_token>@github.com/kode4fun/kode4fun.github.io
 ```
 
+建立 `ssh` 链接的方式如下：
+
+```bash
+# ssh 方式，注意结尾有 .git
+git remote add homepage git@github.com:kode4fun/kode4fun.github.io.git
+```
+
+建立完成后，使用如下命令确认。
+
+```bash
+git remote -v
+```
+
 ### 建立本地博客
-使用下面的命令克隆模板和主题到本地
+使用下面的命令克隆模板和主题到本地。
 
 ```bash
 # git clone git@github.com:keysaim/huxpro.github.io.git
