@@ -18,7 +18,7 @@ tags:
 当配合 _pinia-plugin-persistedstate_ 进行持久化，如果不注意可能导致无法持久化。
 
 ### xlsx-style 问题
-Vue3+Vite 安装 xlsx-style 后，出现 `Can‘t resolve ‘./cptable‘ in ‘xxx\node_modules_xlsx`。  
+Vue3+Vite 安装 xlsx-style 后，出现 `Can't resolve './cptable' in 'xxx\node_modules_xlsx'`。  
 某度出来的要么改源代码，要么改 _vite.config.json_，都行不通，应直接使用 `xlsx-style` 包代替。  
 测试环境 vue 3.4.29 + vite 5.3.1。
 
