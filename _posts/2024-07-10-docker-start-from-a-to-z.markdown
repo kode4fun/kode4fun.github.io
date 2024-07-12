@@ -15,7 +15,7 @@ tags:
 
 ## 安装 wsl 2
 ### 准备工作
-检查是否启用 **`Hyper-V`** 和 **`适用于Linux的Windows子系统`**（控制面板》程序》启用或关闭功能）
+从**控制面板** => **程序** => **启用或关闭功能** 中启用 **`Hyper-V`** 和 **`适用于Linux的Windows子系统`**
 ### 安装 wsl
 管理员权限打开 Powershell  
 运行 `wsl --install` 或 `wsl --update`  
