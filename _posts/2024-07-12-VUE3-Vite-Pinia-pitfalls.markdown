@@ -6,8 +6,9 @@ date:       2024-07-12 00:00:00
 author:     "kode4fun"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - git
-    - github
+    - Vue
+    - Vite
+    - Pinia
 ---
 
 > Vue3+Vite+Pinia 黄金搭档里的超级大坑。
