@@ -6,9 +6,9 @@ date:       2024-07-12 00:00:00
 author:     "kode4fun"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - Vue
-    - Vite
-    - Pinia
+    - Docker
+    - WSL
+    - Ubuntu
 ---
 
 > 从 0 开始入坑 Docker

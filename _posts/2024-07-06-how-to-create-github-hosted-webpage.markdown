@@ -8,6 +8,7 @@ header-img: "img/post-bg-2015.jpg"
 tags:
     - git
     - github
+    - WSL
 ---
 
 > 在 github 上建立主页的流程的不完全记录。
