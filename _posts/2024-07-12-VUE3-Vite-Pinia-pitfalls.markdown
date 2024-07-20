@@ -108,6 +108,5 @@ async function lazyLoadScript() {
 
 ### 样式穿透
 语法是 `:deep(...)`，如 `:deep(.el-iput__content)`。
-### 测试图片
 <!-- <img src="/img/in-post/moon-in-the-sky.jpg" align="center" width="50%"> -->
 <!-- ![moon in the sky](/img/in-post/moon-in-the-sky.jpg) -->
