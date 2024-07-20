@@ -37,6 +37,30 @@ console.log(students.value.size); // map 的成员个数
 <!-- 数组第一项 value[0] 为 map 的 key, 第二项 value[1] 为 object -->
 </div>
 ```
+
+### 懒加载模块
+懒加载脚本，若提供了默认导出，可使用如下案例：
+
+```js
+let myFunc = null
+async function lazyLoadScript() {
+    if(!myFunc)
+        myFunc = await import('./path-to-script/myscript.js'); // 提供默认导入
+}
+
+```
+若脚本未提供默认导出，则按照下面的方式引入：
+
+```js
+let myFunc = null
+async function lazyLoadScript() {
+    if(!myFunc)
+        await import('./path-to-script/myscript.js')
+            .then(module=>myFunc = module.myFunc); // 未提供默认导入
+}
+
+```
+
 ### 样式穿透
 语法是 `:deep(...)`，如 `:deep(.el-iput__content)`。
 ### 测试图片
