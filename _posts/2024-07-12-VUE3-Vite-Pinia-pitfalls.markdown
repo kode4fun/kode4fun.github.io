@@ -38,6 +38,51 @@ console.log(students.value.size); // map 的成员个数
 </div>
 ```
 
+### 路由文件内使用 pinia 的问题
+路由文件内，需要注意 store 的引入位置。进入路由前，`pinia` 未初始化，不可以使用。
+```js
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'homeview',
+      component: HomeView,
+      children: [
+        {
+          beforeEnter: async (to, from, next) => {
+            // 不能在外面使用 pinia，路由初始化时，pinia 未初始化
+            const { myTestStore: MTStore } = useStore();
+            const { isUserLogined } = storeToRefs(MTStore);
+            if (!MTStore.isUserLogined())
+              next({ path: from.path }); //  注意： next(false) 只是中断路由，并不返回
+            else
+              next();
+          },
+          path: '/main-content',
+          name: 'main-content',
+          component: () => import('@/components/MainContent.vue')
+        },
+      ],
+    },
+});
+```
+
+### Vue3 中 404 路由设置
+Vue3 与 Vue2 在 404 路由语法上不兼容。
+```js
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/:pathMatch(.*)*', // 404 页面
+      redirect: '/404',
+    },
+  ]
+});
+```
+
+
 ### 懒加载模块
 懒加载脚本，若提供了默认导出，可使用如下案例：
 

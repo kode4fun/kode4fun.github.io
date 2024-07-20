@@ -12,7 +12,7 @@ tags:
 
 > XLSX 历史遗留坑
 
-### xlsx-style 问题
+### 安装 xlsx-style 问题
 Vue3+Vite 安装 `xlsx-style` 后，出现 `Can't resolve './cptable' in 'xxx\node_modules_xlsx'` 信息。  
 某度出来的要么改源代码，要么改 `vite.config.json`，都行不通，应直接使用 `xlsx-style-vite` 包代替。  
 测试环境 vue 3.4.29 + vite 5.3.1。
@@ -28,7 +28,7 @@ XLSX 库默认安装下，存在无法将 `.f` 属性的公式导出。需要修
 
 魔改后的 `XLSX-style-vite` 文件点击<a href="/attachments/xlsx-with-formula-and-row.js" download>这里</a>下载。
 
-### XLSX
-### 测试图片
+
+<!-- ### 测试图片 -->
 <!-- <img src="/img/in-post/moon-in-the-sky.jpg" align="center" width="50%"> -->
 <!-- ![moon in the sky](/img/in-post/moon-in-the-sky.jpg) -->
