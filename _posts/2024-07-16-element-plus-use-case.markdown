@@ -48,6 +48,8 @@ function onBlur(event,index) {
 }
 ```
 
+在循环中使用 `ElInputNumber` 时，需要注意 `key` 。
+
 ### ElBadge
 当给 `ElBadge` 绑定 `click` 事件时，需要检测点击的是否是 `ElBadged` 包裹的内部对象。
 ```html
