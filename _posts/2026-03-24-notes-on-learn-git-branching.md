@@ -255,3 +255,4 @@ git push origin feature
 ## 参考资源
 - [https://learngitbranching.js.org/?locale=zh_CN](https://learngitbranching.js.org/?locale=zh_CN)
 - [Git学习01-Learn Git Branching(在线学习工具)](https://cloud.tencent.com/developer/article/1641410)
+- [git pro 电子书](https://git-scm.com/book/zh/v2)

@@ -5,7 +5,6 @@ author:     kode4fun
 categories: [tech,python]
 tags:
     - python
-    - turtle
 ---
 
 > Python turtle API 参考
